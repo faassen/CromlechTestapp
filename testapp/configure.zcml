@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:grok="http://namespaces.zope.org/grok">
+
+  <include package="zope.security" file="meta.zcml" />
+  <include package="zope.component" file="meta.zcml" />
+  <include package="grokcore.component" file="meta.zcml" />
+  <include package="dolmen.view" file="meta.zcml" />
+
+  <include package="cromlech.webob" />
+  <include package="cromlech.dawnlight" />
+  <include package="cromlech.dawnlight" file="consumers.zcml" />
+
+  <grok:grok package="." />
+
+</configure>
